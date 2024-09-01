@@ -1,0 +1,130 @@
+:root {
+    --margin-color: rgb(96, 153, 192);
+    --container-color: rgb(241, 245, 223);
+    --form-color: rgb(244, 244, 199); 
+    /* --margin-color: rgb(195, 135, 134); */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--margin-color);
+    height: 100%;
+    line-height: 1.5;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    padding: 0 60px;
+}
+
+.img-container {
+    flex: 1;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    opacity: 0.9;
+    display: block;
+    background-color: var(--margin-color);
+    background-blend-mode: multiply;
+}
+
+
+.container .section {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    background-color: var(--container-color);
+}
+
+.container .section h2 {
+    padding-left: 30px; 
+    padding-right: 60px; 
+}
+
+h2 {
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.two-column-form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.form-section {
+    background-color: var(--form-color) ;
+    margin-top: 45px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-section > h2 {
+    margin: 20px 0 15px 0px;
+}
+
+input {
+    display:inline-block;
+    padding: 4px 5px;
+    margin: 0 30px;
+    margin-bottom: 15px;
+
+}
+
+.label {
+    margin: 0 30px;
+}
+
+.section-bottom {
+    background-image: url(./Images/sheri-silver-5A0O12BIsjY-unsplash.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: 60% 40%;
+    background-color: var(--container-color);
+    background-blend-mode: multiply;
+}
+
+.section-bottom button {
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: pink
+}
+
+.section-bottom p:first-of-type {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.section-bottom p + p {
+    float: right;
+    margin-top: 50px;
+}
+
+.img-container p {
+    position: relative;
+    bottom: 3.5%;
+    left: 20%;
+}
