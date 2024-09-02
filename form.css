@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Sevillana-Regular;
+    src: url(./fonts/Sevillana-Regular.ttf);
+}
+
 :root {
     --margin-color: rgb(96, 153, 192);
     --container-color: rgb(241, 245, 223);
     --form-color: rgb(244, 244, 199); 
-    /* --margin-color: rgb(195, 135, 134); */
+    --logo-color: aliceblue;
+    /* --margin-color: rgb(96, 153, 192); */
 }
 
 *,
@@ -15,12 +21,32 @@
 body {
     background-color: var(--margin-color);
     height: 100%;
-    line-height: 1.5;
+    font-family: palatino;
+    font-size: 0.9rem;
 }
 
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+
+.logo-container {
+    position: absolute;
+    width: calc(100% - 7.5rem);
+    height: 6rem;
+    top: 3.5rem;
+    left: 3.75rem;
+}
+
+.logo-container .logo {
+    position: relative;
+    font-family: Sevillana-Regular;
+    font-size: 5rem;
+    z-index: 3;
+    color: var(--logo-color);
+    left: calc(100% / 10);
+    text-shadow: 1px 1px 1px rgb(113, 99, 99);
 }
 
 .container {
@@ -30,9 +56,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .img-container {
-    flex: 1;
+    flex: 1 0;
     overflow: hidden;
-    flex-wrap: wrap;
 }
 
 .img-container img {
@@ -41,6 +66,7 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     opacity: 0.9;
     display: block;
+    position: relative;
     background-color: var(--margin-color);
     background-blend-mode: multiply;
 }
@@ -50,14 +76,29 @@ p, h1, h2, h3, h4, h5, h6 {
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
-    background-color: var(--container-color);
+    padding-top: 20px;
+    background-image: linear-gradient(180deg, var(--container-color), rgb(227, 235, 190));
+    z-index: 2;
 }
 
 .container .section h2 {
     padding-left: 30px; 
     padding-right: 60px; 
+    z-index: 2;
+    font-weight: lighter;
+    line-height: 1.5 !important;
+    text-align: left;
+    max-width: 60ch
 }
+
+.container .section > img {
+    width: 10rem;
+    display: block;
+    position: relative;
+    margin: 0;
+    margin-left: calc(100% - 11rem);
+}
+
 
 h2 {
     text-align: left;
@@ -88,7 +129,6 @@ input {
     padding: 4px 5px;
     margin: 0 30px;
     margin-bottom: 15px;
-
 }
 
 .label {
