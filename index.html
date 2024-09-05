@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="logo-container"><span class="logo">Odin Ice</span></div>
+
+    <div class="logo-container">
+       <span class="logo">Odin Ice</span> 
+    </div>
+
 <div class="container">
     <div class="img-container">    
         <img src="./Images/rachael-gorjestani-HLt6jQLf_J0-unsplash.jpg" alt="icecream">
@@ -16,43 +20,47 @@
     </div>
 
         <div class="section">
+            <img src="Images/ice-cream.svg" alt="ice-cream logo">
             <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Ut enim ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex.</h2><br>
+                Ut enim ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex.</h2>
             <h2>Lorem, ipsum dolor.</h2>
 
 
         <div class="form-section">
             <h2>Let's do this!</h2>
 
-            <form class="two-column-form">
+            <form class="two-column-form" action="#" method="post">
                 <div class="form-group">
                 <div class="label">
                 <label for="first-name">FIRST NAME</label>
                 </div>
-                <input type="text" id="first-name" name="name"/>
+                <input type="text" id="first-name" name="name" value="first-name"
+                minlength="2" required/>
                 <div class="label">
                 <label for="last-name">LAST NAME</label>
                 </div>
-                <input type="text" id="last-name" name="last-name"/>
+                <input type="text" id="last-name" name="last-name" value="last-name"
+                minlength="2" required/>
                 <div class="label">
                 <label for="email">EMAIL</label>
                 </div>
-                <input type="email" id="email" name="email"/>
+                <input type="email" id="email" name="email" value="email" required/>
                 </div>
 
                 <div class="form-group2">
                 <div class="label">
                 <label for="phone">PHONE NUMBER</label>
                 </div>
-                <input type="tel" id="phone" name="phone"/>
+                <input type="tel" id="phone" name="phone" min="10" max="10"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-789" required/>
                 <div class="label">
                 <label for="password">PASSWORD</label>
                 </div>
-                <input type="password" id="password" name="password"/>
+                <input type="password" id="password" name="password" value="password" required/>
                 <div class="label">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
                 </div>
-                <input type="password" id="confirm-password" name="confirm-password"/>
+                <input type="password" id="confirm-password" name="confirm-password" value="password" required>
                 </div>
             </form>
         </div>
