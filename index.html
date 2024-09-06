@@ -31,36 +31,56 @@
 
             <form class="two-column-form" action="#" method="post">
                 <div class="form-group">
+
                 <div class="label">
                 <label for="first-name">FIRST NAME</label>
                 </div>
-                <input type="text" id="first-name" name="name" value="first-name"
-                minlength="2" required/>
+                <input type="text" id="first-name" name="name"
+                pattern="[a-zA-Z]{2,20}" placeholder="First name" />
+                <span></span>
+
+
                 <div class="label">
                 <label for="last-name">LAST NAME</label>
                 </div>
-                <input type="text" id="last-name" name="last-name" value="last-name"
-                minlength="2" required/>
+                <input type="text" id="last-name" name="last-name"
+                pattern="[a-zA-Z]{2,20}"  placeholder="Last name"/>
+                <span></span>
+
+
                 <div class="label">
                 <label for="email">EMAIL</label>
                 </div>
-                <input type="email" id="email" name="email" value="email" required/>
+                <input type="email" id="email" name="email" 
+                patter="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g" placeholder="name@gmail.com"/>
+                <span></span>
                 </div>
 
+
                 <div class="form-group2">
+
                 <div class="label">
                 <label for="phone">PHONE NUMBER</label>
                 </div>
-                <input type="tel" id="phone" name="phone" min="10" max="10"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-789" required/>
+                <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required/>
+                <span></span>
+
+
                 <div class="label">
                 <label for="password">PASSWORD</label>
                 </div>
-                <input type="password" id="password" name="password" value="password" required/>
+                <input type="password" id="password" name="password" placeholder="8 digits min" 
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" minlength="8"/>
+                <span></span>
+
+
                 <div class="label">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
                 </div>
-                <input type="password" id="confirm-password" name="confirm-password" value="password" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="8 digits min" 
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"required>
+                <span></span>
                 </div>
             </form>
         </div>
@@ -72,5 +92,6 @@
                 on <a href="https://unsplash.com/">Unplash</a></p>
         </div>
 </div>
+<script src="javascript.js"></script>
 </body>
 </html>

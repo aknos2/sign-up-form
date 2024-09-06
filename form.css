@@ -150,19 +150,43 @@ input {
     border: 1px solid black;
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid rgb(80, 117, 203);
+    box-shadow: rgba(0, 0, 0, 0.12) 3px 5px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;;
+}
+
+input:hover {
+    background-color: rgb(249, 240, 247);
+}
+
+input + span {
+    position: relative;
+}
+
+
+input:user-invalid + span::before {
+    content: "✖ required";
+    color: red;
+    position: absolute;
+    top: -26px;
+    left: -90px;
+}
+
+input:user-valid + span::before {
+    content: "✓ valid";
+    color: green;
+    position: absolute;
+    top: -26px;
+    left: -90px;
+}
+
+
 .label {
     margin: 0 30px;
     font-size: 0.8rem;
     font-weight: 200px;
     font-family: open-sans;
-}
-
-input:focus {
-    border-color: #141313;
-}
-
-input:hover {
-    background-color: rgb(249, 240, 247);
 }
 
 .section-bottom {
@@ -186,9 +210,19 @@ input:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
 }
 
-button:hover,
+button:hover {
+    background: rgb(250, 180, 192);
+}
+
+button:active {
+    background: rgb(250, 180, 192);
+    box-shadow: rgba(0, 0, 0, 0.12) 3px 5px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transform: translateY(4px);
+}
+
 button:focus {
     background: rgb(250, 180, 192);
+    box-shadow: rgba(0, 0, 0, 0.12) 3px 5px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .section-bottom p:first-of-type {
@@ -207,6 +241,7 @@ button:focus {
 
 .section-bottom p:first-of-type > a:hover {
     color: rgb(210, 215, 58);
+    font-size: 1.25rem;
 }
 
 

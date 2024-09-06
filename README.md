@@ -1,6 +1,6 @@
 # sign-up-form
 Create a form page. 6th project of Odin Project.
-The goal of the project is to create a basic sign-up form using the knowledge I obtained from Intermediate HTML and CSS Course of Odin Project.
+The goal of the project is to create a basic sign-up form layout using the knowledge I obtained from Intermediate HTML and CSS Course of Odin Project. I'm not using Javascript for this project since I didn't learn it yet. The form does not have a full responsive design either.
 
 ### Image Credits
 
