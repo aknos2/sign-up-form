@@ -1,10 +1,19 @@
 # sign-up-form
+
 Create a form page. 6th project of Odin Project.
 The goal of the project is to create a basic sign-up form layout using the knowledge I obtained from Intermediate HTML and CSS Course of Odin Project. I'm not using Javascript for this project since I didn't learn it yet. The form does not have a full responsive design either.
 
+## Website url
+
+https://aknos2.github.io/sign-up-form/
+
+## Screenshots
+
+<img src="./Images/screenshot.png" alt="screenshot">
+
 ### Image Credits
 
-Rachael Gorjestani https://unsplash.com/photos/person-holding-ice-cream-on-cone-HLt6jQLf_J0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash 
+Rachael Gorjestani https://unsplash.com/photos/person-holding-ice-cream-on-cone-HLt6jQLf_J0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
 
 sheri silver https://unsplash.com/photos/vanilla-ice-cream-with-sprinkles-5A0O12BIsjY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
 
